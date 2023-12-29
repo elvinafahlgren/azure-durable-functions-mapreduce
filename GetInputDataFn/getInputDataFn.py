@@ -1,16 +1,6 @@
-# This function is not intended to be invoked directly. Instead it will be
-# triggered by an orchestrator function.
-# Before running this sample, please:
-# - create a Durable orchestration function
-# - create a Durable HTTP starter function
-# - add azure-functions-durable to requirements.txt
-# - run pip install -r requirements.txt
-
-import logging
 import os
 import tempfile
-from azure.identity import DefaultAzureCredential
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from azure.storage.blob import BlobServiceClient
 
 
 def download_blob(blob_service_client, container_name, blob_name):
@@ -50,6 +40,6 @@ def main(context):
 
         return input_data
 
-    except Exception as ex:
+    except Exception as e:
         print('Exception:')
-        print(ex)
+        print(e)
