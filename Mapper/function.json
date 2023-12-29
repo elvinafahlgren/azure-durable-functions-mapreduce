@@ -1,0 +1,10 @@
+{
+  "scriptFile": "mapper.py",
+  "bindings": [
+    {
+      "name": "keyValue",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}

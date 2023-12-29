@@ -1,0 +1,10 @@
+{
+  "scriptFile": "reducer.py",
+  "bindings": [
+    {
+      "name": "shuffled",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}

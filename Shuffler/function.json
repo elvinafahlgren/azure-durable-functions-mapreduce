@@ -1,0 +1,10 @@
+{
+  "scriptFile": "shuffler.py",
+  "bindings": [
+    {
+      "name": "mapped",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}
